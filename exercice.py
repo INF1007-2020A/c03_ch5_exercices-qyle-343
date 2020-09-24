@@ -22,7 +22,23 @@ def use_prefixes() -> List[str]:
 
 
 def prime_integer_summation() -> int:
-    return 0
+    counter = 0
+    prime_number = 3
+    add = 2
+    check_number = 2
+    while counter < 100:
+        if check_number == prime_number:
+            check_number = 2
+            add += prime_number
+            counter += 1
+            prime_number += 1
+        else:
+            if prime_number % check_number == 0:
+                prime_number += 1
+                check_number = 2
+            else:
+                check_number += 1
+    return add
 
 
 def factorial(number: int) -> int:
