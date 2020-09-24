@@ -50,6 +50,11 @@ def factorial(number: int) -> int:
 
 
 def use_continue() -> None:
+    for element in range(1, 11):
+        if element == 5:
+            continue
+        else:
+            print(element)
     pass
 
 
