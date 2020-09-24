@@ -22,7 +22,7 @@ def use_prefixes() -> List[str]:
 
 
 def prime_integer_summation() -> int:
-    counter = 1
+    counter = 0
     prime_number = 3
     add = 2
     check_number = 2
